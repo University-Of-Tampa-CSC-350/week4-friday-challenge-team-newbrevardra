@@ -11,6 +11,18 @@
         android:alpha="0.5"
         android:scaleType="centerCrop"
         android:src="@drawable/kjui" />
+
+    <TextView
+        android:id="@+id/trustTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        tools:text="Trust Level: 0" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -50,8 +62,6 @@ Police have secured the perimeter, but the situation is unstable.\n\nYou are Con
 
 
     </LinearLayout>
-
-
 
 
 </FrameLayout>

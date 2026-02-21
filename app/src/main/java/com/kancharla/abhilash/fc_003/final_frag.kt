@@ -44,4 +44,10 @@ class final_frag : Fragment() {
 
         return view
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val trustTextView = view.findViewById<TextView>(R.id.trustTextView)
+        trustTextView.text = "Trust Level: ${viewModel.trustLevel}"
+    }
 }
