@@ -17,25 +17,25 @@ class m1_76542 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_m1_76542, container, false)
-        
+
         view.findViewById<Button>(R.id.button5).setOnClickListener {
             viewModel.selectedStrategy = "ESTABLISH_CONTACT"
             viewModel.trustLevel += 5
-            findNavController().navigate(R.id.action_m1_76542_to_m1_23961)
+            findNavController().navigate(R.id.action_m1_76542_to_final_frag)
         }
-        
+
         view.findViewById<Button>(R.id.button3).setOnClickListener {
             viewModel.helicopterDismissed = true
             viewModel.trustLevel += 10
-            findNavController().navigate(R.id.action_m1_76542_to_m1_39462)
+            findNavController().navigate(R.id.action_m1_76542_to_final_frag)
         }
-        
+
         view.findViewById<Button>(R.id.button4).setOnClickListener {
             viewModel.selectedStrategy = "REFUSE_NEGOTIATION"
             viewModel.trustLevel -= 10
-            findNavController().navigate(R.id.action_m1_76542_to_m1_97109)
+            findNavController().navigate(R.id.action_m1_76542_to_final_frag)
         }
-        
+
         return view
     }
 

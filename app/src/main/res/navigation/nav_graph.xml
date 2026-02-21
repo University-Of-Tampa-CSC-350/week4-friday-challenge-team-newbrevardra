@@ -29,40 +29,7 @@
         android:label="fragment_m1_76542"
         tools:layout="@layout/fragment_m1_76542" >
         <action
-            android:id="@+id/action_m1_76542_to_m1_23961"
-            app:destination="@id/m1_23961" />
-        <action
-            android:id="@+id/action_m1_76542_to_m1_39462"
-            app:destination="@id/m1_39462" />
-        <action
-            android:id="@+id/action_m1_76542_to_m1_97109"
-            app:destination="@id/m1_97109" />
-    </fragment>
-    <fragment
-        android:id="@+id/m1_23961"
-        android:name="com.kancharla.abhilash.fc_003.m1_23961"
-        android:label="fragment_m1_23961"
-        tools:layout="@layout/fragment_m1_23961" >
-        <action
-            android:id="@+id/action_m1_23961_to_final_frag"
-            app:destination="@id/final_frag" />
-    </fragment>
-    <fragment
-        android:id="@+id/m1_39462"
-        android:name="com.kancharla.abhilash.fc_003.m1_39462"
-        android:label="fragment_m1_39462"
-        tools:layout="@layout/fragment_m1_39462" >
-        <action
-            android:id="@+id/action_m1_39462_to_final_frag"
-            app:destination="@id/final_frag" />
-    </fragment>
-    <fragment
-        android:id="@+id/m1_97109"
-        android:name="com.kancharla.abhilash.fc_003.m1_97109"
-        android:label="fragment_m1_97109"
-        tools:layout="@layout/fragment_m1_97109" >
-        <action
-            android:id="@+id/action_m1_97109_to_final_frag"
+            android:id="@+id/action_m1_76542_to_final_frag"
             app:destination="@id/final_frag" />
     </fragment>
     <fragment
@@ -75,5 +42,9 @@
             app:destination="@id/m1_97123"
             app:popUpTo="@id/m1_97123"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="outcome"
+            app:argType="string"
+            android:defaultValue="default" />
     </fragment>
 </navigation>
