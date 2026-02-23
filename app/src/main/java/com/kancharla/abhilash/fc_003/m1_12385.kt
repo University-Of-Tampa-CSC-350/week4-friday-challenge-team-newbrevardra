@@ -23,7 +23,7 @@ class m1_12385 : Fragment() {
             viewModel.trustLevel = 0
             viewModel.selectedStrategy = null
             viewModel.helicopterDismissed = false
-            findNavController().navigate(R.id.action_m1_12385_to_m1_97123)
+            //findNavController().navigate(R.id.action_m1_12385_to_m1_97123)
         }
         return view
     }
