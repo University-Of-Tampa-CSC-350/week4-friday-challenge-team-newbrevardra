@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 
@@ -21,22 +22,31 @@ class m1_76542 : Fragment() {
         view.findViewById<Button>(R.id.button5).setOnClickListener {
             viewModel.selectedStrategy = "ESTABLISH_CONTACT"
             viewModel.trustLevel += 5
-            findNavController().navigate(R.id.action_m1_76542_to_m1_23961)
+            val action = m1_76542Directions.actionM176542ToM123961(viewModel.trustLevel)
+            findNavController().navigate(action)
         }
         
         view.findViewById<Button>(R.id.button3).setOnClickListener {
             viewModel.helicopterDismissed = true
             viewModel.trustLevel += 10
-            findNavController().navigate(R.id.action_m1_76542_to_m1_39462)
+            val action = m1_76542Directions.actionM176542ToM139462(viewModel.trustLevel)
+            findNavController().navigate(action)
         }
         
         view.findViewById<Button>(R.id.button4).setOnClickListener {
             viewModel.selectedStrategy = "REFUSE_NEGOTIATION"
             viewModel.trustLevel -= 10
-            findNavController().navigate(R.id.action_m1_76542_to_m1_97109)
+            val action = m1_76542Directions.actionM176542ToM197109(viewModel.trustLevel)
+            findNavController().navigate(action)
         }
         
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val trustTextView = view.findViewById<TextView>(R.id.trustTextView)
+        trustTextView?.text = "Trust Level: ${viewModel.trustLevel}"
     }
 
     companion object {

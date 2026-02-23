@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 
@@ -25,6 +26,12 @@ class m1_12385 : Fragment() {
             findNavController().navigate(R.id.action_m1_12385_to_m1_97123)
         }
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val trustTextView = view.findViewById<TextView>(R.id.trustTextView)
+        trustTextView?.text = "Trust Level: ${viewModel.trustLevel}"
     }
 
     companion object {

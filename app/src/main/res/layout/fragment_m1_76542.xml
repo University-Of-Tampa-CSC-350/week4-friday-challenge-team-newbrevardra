@@ -11,6 +11,14 @@
         android:alpha="0.4"
         android:scaleType="centerCrop"
         android:src="@drawable/jhuy" />
+    <TextView
+        android:id="@+id/trustTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -75,8 +83,5 @@ One wrong decision could escalate the situation beyond control.\n\nYou must deci
         </LinearLayout>
 
     </LinearLayout>
-
-
-
 
 </FrameLayout>

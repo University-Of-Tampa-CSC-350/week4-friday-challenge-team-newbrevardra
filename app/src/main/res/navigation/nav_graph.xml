@@ -43,6 +43,19 @@
         android:name="com.kancharla.abhilash.fc_003.m1_23961"
         android:label="fragment_m1_23961"
         tools:layout="@layout/fragment_m1_23961" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_23961_to_m1_67192"
+            app:destination="@id/m1_67192" />
+        <action
+            android:id="@+id/action_m1_23961_to_m1_45123"
+            app:destination="@id/m1_45123" />
+        <action
+            android:id="@+id/action_m1_23961_to_m1_86141"
+            app:destination="@id/m1_86141" />
         <action
             android:id="@+id/action_m1_23961_to_final_frag"
             app:destination="@id/final_frag" />
@@ -52,6 +65,16 @@
         android:name="com.kancharla.abhilash.fc_003.m1_39462"
         android:label="fragment_m1_39462"
         tools:layout="@layout/fragment_m1_39462" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_39462_to_m1_12845"
+            app:destination="@id/m1_12845" />
+        <action
+            android:id="@+id/action_m1_39462_to_m1_86141"
+            app:destination="@id/m1_86141" />
         <action
             android:id="@+id/action_m1_39462_to_final_frag"
             app:destination="@id/final_frag" />
@@ -61,15 +84,122 @@
         android:name="com.kancharla.abhilash.fc_003.m1_97109"
         android:label="fragment_m1_97109"
         tools:layout="@layout/fragment_m1_97109" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_97109_to_m1_75628"
+            app:destination="@id/m1_75628" />
+        <action
+            android:id="@+id/action_m1_97109_to_m1_12385"
+            app:destination="@id/m1_12385" />
+        <action
+            android:id="@+id/action_m1_97109_to_m1_23961"
+            app:destination="@id/m1_23961" />
         <action
             android:id="@+id/action_m1_97109_to_final_frag"
             app:destination="@id/final_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/m1_67192"
+        android:name="com.kancharla.abhilash.fc_003.m1_67192"
+        android:label="fragment_m1_67192"
+        tools:layout="@layout/fragment_m1_67192" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_67192_to_m1_97123"
+            app:destination="@id/m1_97123"
+            app:popUpTo="@id/m1_97123"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/m1_45123"
+        android:name="com.kancharla.abhilash.fc_003.m1_45123"
+        android:label="fragment_m1_45123"
+        tools:layout="@layout/fragment_m1_45123" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_45123_to_m1_97123"
+            app:destination="@id/m1_97123"
+            app:popUpTo="@id/m1_97123"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/m1_12845"
+        android:name="com.kancharla.abhilash.fc_003.m1_12845"
+        android:label="fragment_m1_12845"
+        tools:layout="@layout/fragment_m1_12845" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_12845_to_m1_97123"
+            app:destination="@id/m1_97123"
+            app:popUpTo="@id/m1_97123"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/m1_86141"
+        android:name="com.kancharla.abhilash.fc_003.m1_86141"
+        android:label="fragment_m1_86141"
+        tools:layout="@layout/fragment_m1_86141" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_86141_to_m1_97123"
+            app:destination="@id/m1_97123"
+            app:popUpTo="@id/m1_97123"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/m1_75628"
+        android:name="com.kancharla.abhilash.fc_003.m1_75628"
+        android:label="fragment_m1_75628"
+        tools:layout="@layout/fragment_m1_75628" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_75628_to_m1_97123"
+            app:destination="@id/m1_97123"
+            app:popUpTo="@id/m1_97123"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/m1_12385"
+        android:name="com.kancharla.abhilash.fc_003.m1_12385"
+        android:label="fragment_m1_12385"
+        tools:layout="@layout/fragment_m1_12385" >
+        <argument
+            android:name="currentTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_m1_12385_to_m1_97123"
+            app:destination="@id/m1_97123"
+            app:popUpTo="@id/m1_97123"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/final_frag"
         android:name="com.kancharla.abhilash.fc_003.final_frag"
         android:label="fragment_final_frag"
         tools:layout="@layout/fragment_final_frag" >
+        <argument
+            android:name="finalTrust"
+            app:argType="integer"
+            android:defaultValue="0" />
         <action
             android:id="@+id/action_final_frag_to_m1_97123"
             app:destination="@id/m1_97123"
